@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_week15/views/listview_menu.dart';
+import 'package:flutter_week15/views/card_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: ListviewMenu());
+    return MaterialApp(home: CardPage());
   }
 }
