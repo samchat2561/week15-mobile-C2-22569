@@ -20,8 +20,8 @@ class HomeScreen extends StatelessWidget {
               accountName: Text("Mr.Mark Zuckerberg"),
               accountEmail: Text("mark@gmail.com"),
               currentAccountPicture: CircleAvatar(
-                child: Icon(Icons.android),
-                // backgroundImage: NetworkImage('https://cdn.britannica.com/99/236599-050-1199AD2C/Mark-Zuckerberg-2019.jpg'),
+                // child: Icon(Icons.android),
+                backgroundImage: NetworkImage('https://cdn.britannica.com/99/236599-050-1199AD2C/Mark-Zuckerberg-2019.jpg'),
                 ),
             ),
             ListTile(
