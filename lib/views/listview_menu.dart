@@ -50,9 +50,9 @@ class ListviewMenu extends StatelessWidget {
               ),
               onTap: () {
                 debugPrint(menus[index].title);
-                if (Navigator.canPop(context)) {
-                  Navigator.pop(context, menus[index].title);
-                }
+                // if (Navigator.canPop(context)) {
+                //   Navigator.pop(context, menus[index].title);
+                // }
               },
             );
           },

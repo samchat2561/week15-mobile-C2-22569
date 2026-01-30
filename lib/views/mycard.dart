@@ -15,7 +15,10 @@ List<ListMenu> menus = [
 ];
 
 class Mycard extends StatelessWidget {
-  const Mycard({super.key});
+  final String name;
+  static String id = '/mycard';
+
+  const Mycard({super.key, required this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +26,7 @@ class Mycard extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.purple,
-        title: Text("My Card"),
+        title: Text(name, style: TextStyle(color: Colors.white)),
       ),
       body: Container(
         child: GridView.count(
@@ -40,11 +43,7 @@ class Mycard extends StatelessWidget {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(
-                        menus[index].icon,
-                        size: 40,
-                        color: Colors.white,
-                      ),
+                      Icon(menus[index].icon, size: 40, color: Colors.white),
                       Text(
                         "${menus[index].title}",
                         style: TextStyle(fontSize: 15, color: Colors.white),
